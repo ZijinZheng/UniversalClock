@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Universal Clock</title>
+    <link href="clock.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div style="max-width:720px; margin:0 auto;" >
+		<canvas id="canvas" width="720" height="720"
+				style="background-color:white"></canvas>
+
+		<div>
+			<label id="UTC">UTC</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="UTC0" name="timezone" checked />
+			<label for="UTC0" style="white-space: pre">UTC   Greenwich Mean Time</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="UTC8" name="timezone" checked />
+			<label for="UTC8">
+				<font color="IndianRed">UTC+8 China Standard Time</font>
+			</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="UTCm8" name="timezone" checked />
+			<label for="UTCm8">
+				<font color="DodgerBlue">UTC-8 Pacific Standard Time</font>
+			</label>
+		</div>
+
+		<script src="jquery-3.2.1.min.js"> </script>
+		<script src="clock.js"> </script>
+
+		<p>
+			The clock simulates the rotation of earth, looked upon the north pole. The SUN shines on the top of the clock. <br>
+			Inner circle is time zone. Outer circle is time. You simply match inner circle's tick to outer circle to get the hour.
+		</p>
+		<p>Bonus! It's also a compass. The hour hand matching your time zone is always pointing South. </p>
+	</div>	
+</body>
+
+</html>
