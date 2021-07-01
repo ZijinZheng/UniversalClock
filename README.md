@@ -6,3 +6,5 @@ Inner circle is time zone. Outer circle is time. You simply match inner circle's
 Bonus! It's also a compass. The hour hand matching your time zone is always pointing South.
 
 ![](screenshot1.png)
+
+Based on https://codepen.io/nishigaba/pen/wGegLK
